@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "892462049902",
+    "firebase_url": "https://peruappsocial.firebaseio.com",
+    "project_id": "peruappsocial",
+    "storage_bucket": "peruappsocial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892462049902:android:593b7ec3d4f471db",
+        "android_client_info": {
+          "package_name": "com.fs.peruappsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892462049902-fv6j512h3frt2sl32qpjlshla9mqnlc3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fs.peruappsocial",
+            "certificate_hash": "e232e22a658804136baabda9dc74e007030fed16"
+          }
+        },
+        {
+          "client_id": "892462049902-2mgqt9bihsqdus08egnel63u1q32trvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsT0jNME6OJD6iwTaboGbSUi9Xb3do5GE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892462049902-2mgqt9bihsqdus08egnel63u1q32trvq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
