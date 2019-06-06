@@ -33,11 +33,11 @@ import com.google.firebase.storage.UploadTask;
 
 public class RegistroActivity extends AppCompatActivity {
 
-    ImageView ImgUserFoto;
+
     static int ReqCode =1;
     static int REQUESCODE =1;
     Uri pickerImgUri;
-
+    ImageView ImgUserFoto;
     private EditText userEmail,userPassword,userPassword2,username;
     private ProgressBar loadingProgress;
     private Button regBtn;
@@ -163,7 +163,7 @@ public class RegistroActivity extends AppCompatActivity {
     }
 
     private void ActualizacionUI() {
-        Intent principalActivity = new Intent(getApplicationContext(),PrincipalActivity.class);
+        Intent principalActivity = new Intent(getApplicationContext(),Home.class);
         startActivity(principalActivity);
         finish();
     }

@@ -137,5 +137,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        tools:src="@tools:sample/avatars" />
+        android:src="@drawable/userphoto" />
 </android.support.constraint.ConstraintLayout>

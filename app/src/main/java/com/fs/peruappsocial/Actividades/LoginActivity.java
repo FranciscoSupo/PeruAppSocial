@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -40,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        PrincipalActivity = new Intent(this, com.fs.peruappsocial.Actividades.PrincipalActivity.class);
+        PrincipalActivity = new Intent(this, com.fs.peruappsocial.Actividades.Home.class);
 
         LoginProgress.setVisibility(View.INVISIBLE);
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -103,7 +104,24 @@ public class LoginActivity extends AppCompatActivity {
         finish();
     }
 
+
+
     private void MostrarMensaje(String mensaje) {
         Toast.makeText(LoginActivity.this,mensaje,Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        if(user != null) {
+            //user is already connected  so we need to redirect him to home page
+            IngresoUI();
+
+        }
+
+
+
     }
 }
